@@ -22,31 +22,31 @@ class DateFinder(object):
     language["en"]["DIGITS_MODIFIER_PATTERN"] = '\d+st|\d+th|\d+rd|first|second|third|fourth|fifth|sixth|seventh|eighth|nineth|tenth|next|last'
     language["en"]["DAYS_PATTERN"] = 'monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|tues|wed|thur|thurs|fri|sat|sun'
     language["en"]["MONTHS_PATTERN"] = 'january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec'
-    language["en"]["TIME_PERIOD_PATTERN"] = 'a\.m\.|am|p\.m\.|pm'"]
+    language["en"]["TIME_PERIOD_PATTERN"] = 'a\.m\.|am|p\.m\.|pm'
     ## can be in date strings but not recognized by dateutils
     language["en"]["EXTRA_TOKENS_PATTERN"] = 'due|by|on|standard|daylight|savings|time|date|of|to|until|z|at|t'
 
     ## TODO: Get english numbers?
     ## http://www.rexegg.com/regex-trick-numbers-in-english.html
 
-    language["en"]["RELATIVE_PATTERN"] = 'before|after|next|last|ago'"]
-    language["en"]["TIME_SHORTHAND_PATTERN"] = 'noon|midnight|today|yesterday'"]
-    language["en"]["UNIT_PATTERN"] = 'second|minute|hour|day|week|month|year'"]
+    language["en"]["RELATIVE_PATTERN"] = 'before|after|next|last|ago'
+    language["en"]["TIME_SHORTHAND_PATTERN"] = 'noon|midnight|today|yesterday'
+    language["en"]["UNIT_PATTERN"] = 'second|minute|hour|day|week|month|year'
 
     language["fr"] = {}
     language["fr"]["DIGITS_MODIFIER_PATTERN"] = '\d+er|\d+nd|\d+ème|premier|seconde|troisième|quatrième|cinquième|sixième|septième|huitième|neuvième|dixième|suivant|dernier'
     language["fr"]["DAYS_PATTERN"] = 'lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche|lun|mar|mer|jeu|ven|sam|dim'
     language["fr"]["MONTHS_PATTERN"] = 'janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|decembre|jan|fev|mar|avr|mai|jun|juil|sep|sept|oct|nov|dec'
-    language["fr"]["TIME_PERIOD_PATTERN"] = 'a\.m\.|am|p\.m\.|pm'"]
+    language["fr"]["TIME_PERIOD_PATTERN"] = 'a\.m\.|am|p\.m\.|pm'
     ## can be in date strings but not recognized by dateutils
-    language["fr"]["EXTRA_TOKENS_PATTERN"] = 'due|by|on|standard|daylight|savings|time|date|of|to|until|z|at|t'"]
+    language["fr"]["EXTRA_TOKENS_PATTERN"] = 'due|by|on|standard|daylight|savings|time|date|of|to|until|z|at|t'
 
     ## TODO: Get english numbers?
     ## http://www.rexegg.com/regex-trick-numbers-in-english.html
 
-    language["fr"]["RELATIVE_PATTERN"] = 'before|after|next|last|ago'"]
-    language["fr"]["TIME_SHORTHAND_PATTERN"] = 'noon|midnight|today|yesterday'"]
-    language["fr"]["UNIT_PATTERN"] = 'second|minute|hour|day|week|month|year'"]   
+    language["fr"]["RELATIVE_PATTERN"] = 'before|after|next|last|ago'
+    language["fr"]["TIME_SHORTHAND_PATTERN"] = 'noon|midnight|today|yesterday'
+    language["fr"]["UNIT_PATTERN"] = 'second|minute|hour|day|week|month|year'
     ## Time pattern is used independently, so specified here.
     TIME_PATTERN = """
     (?P<time>
