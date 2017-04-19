@@ -24,7 +24,7 @@ class DateFinder(object):
     language["en"]["MONTHS_PATTERN"] = 'january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec'
     language["en"]["TIME_PERIOD_PATTERN"] = 'a\.m\.|am|p\.m\.|pm'"]
     ## can be in date strings but not recognized by dateutils
-    language["en"]["EXTRA_TOKENS_PATTERN"] = 'due|by|on|standard|daylight|savings|time|date|of|to|until|z|at|t'"]
+    language["en"]["EXTRA_TOKENS_PATTERN"] = 'due|by|on|standard|daylight|savings|time|date|of|to|until|z|at|t'
 
     ## TODO: Get english numbers?
     ## http://www.rexegg.com/regex-trick-numbers-in-english.html
